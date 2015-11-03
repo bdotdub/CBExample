@@ -11,6 +11,7 @@
 		B209FF311BE90F8300F84250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209FF301BE90F8300F84250 /* ViewController.swift */; };
 		B209FF341BE90F8300F84250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B209FF321BE90F8300F84250 /* Main.storyboard */; };
 		B209FF361BE90F8300F84250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B209FF351BE90F8300F84250 /* Assets.xcassets */; };
+		B209FF3E1BE90FAD00F84250 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B209FF3D1BE90FAD00F84250 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		B209FF331BE90F8300F84250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B209FF351BE90F8300F84250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B209FF371BE90F8300F84250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B209FF3D1BE90FAD00F84250 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B209FF3E1BE90FAD00F84250 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +60,7 @@
 				B209FF321BE90F8300F84250 /* Main.storyboard */,
 				B209FF351BE90F8300F84250 /* Assets.xcassets */,
 				B209FF371BE90F8300F84250 /* Info.plist */,
+				B209FF3D1BE90FAD00F84250 /* CoreBluetooth.framework */,
 			);
 			path = CBExample;
 			sourceTree = "<group>";
