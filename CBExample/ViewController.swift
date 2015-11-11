@@ -16,9 +16,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
         super.viewDidLoad()
         
         self.centralManager = CBCentralManager(delegate: self, queue: nil)
-        self.centralManager?.scanForPeripheralsWithServices(nil, options: nil)
     }
-    
+
     // mark: CBCentralManagerDelegate
     func centralManager(central: CBCentralManager, didConnectPeripheral peripheral: CBPeripheral) {
         NSLog("Connected peripheral \(peripheral.name)")
@@ -38,6 +37,9 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
             NSLog("Central Manager: Powered off")
         case .PoweredOn:
             NSLog("Central Manager: Powered on")
+            if ((self.centralManager?.isScanning) != nil) {
+                self.centralManager?.scanForPeripheralsWithServices(nil, options: nil)
+            }
         case .Resetting:
             NSLog("Central Manager: Resetting")
         case .Unauthorized:
